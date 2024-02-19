@@ -15,22 +15,22 @@ public class UserServiceImpl implements UserService {
     }
 
     public void dropUsersTable() {
-        dao.dropUsersTable();
+        daoHibernate.dropUsersTable();
     }
 
-    public void saveUser(String name, String lastName, byte age) {
-        dao.saveUser(name, lastName, age);
+    public void saveUser(String name, String lastName, byte age){
+        daoHibernate.saveUser(name, lastName, age);
     }
 
     public void removeUserById(long id) {
-        dao.removeUserById(id);
+        daoHibernate.removeUserById(id);
     }
 
     public List<User> getAllUsers() {
-        return dao.getAllUsers();
+        return daoHibernate.getAllUsers();
     }
 
     public void cleanUsersTable() {
-        dao.cleanUsersTable();
+        daoHibernate.cleanUsersTable();
     }
 }
