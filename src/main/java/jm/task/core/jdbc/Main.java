@@ -22,13 +22,13 @@ public class Main {
         service.saveUser("Коля", "Кузнецов", (byte) 17);
         service.saveUser("Паша", "Сидоров", (byte) 18);
 
-     //   service.removeUserById(1);
+ //       service.removeUserById(1);
 
         service.getAllUsers();
-//
-//        service.cleanUsersTable();
-//
-        service.dropUsersTable();
+
+        service.cleanUsersTable();
+
+       service.dropUsersTable();
 
     }
 }
